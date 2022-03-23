@@ -135,11 +135,23 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center" style="background-image: url(https://carlotaconbotas.github.io/patagonia/img/panoramio-119155969.jpg);">
-        <div class="bradcumbContent">
-            
-        </div>
-    </section>
+    <div id=”photosphere”> </div>
+<script>   
+  // 360 viewer
+  var PSV = new PhotoSphereViewer({
+    panorama: 'https://carlotaconbotas.github.io/patagonia/img/panoramio-119155969.jpg',
+    container: 'photosphere',
+    loading_img: 'Aquí va la URL del icono',
+    navbar: 'autorotate zoom download fullscreen',
+    caption: 'texto'',
+    default_fov: 65,
+    mousewheel: false,
+    size: {
+      height: 400
+    }
+  });
+</script>
+        
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Book Now Area Start ##### -->

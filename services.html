@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>The Palatin - Hotel &amp; Resort Template</title>
+    <title>Parcelas Patagonia - Río Laguna Cascada</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -17,13 +17,14 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r70/three.min.js"> </script>
-    <script src="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.js"> </script>
-    <style>
-      #photosphere { height:600px; width:100%; margin: 0 auto }
-    </style>
-
+    <!-- JS photosphere -->
+    <script src="js/jquery/three.min.js"></script>
+    <script src="js/jquery/photo-sphere-viewer.min.js"></script>
+        <style>
+            #container {
+                height:760px; width:100%; margin: 0 auto 
+            }
+        </style>
 </head>
 
 <body>
@@ -35,6 +36,7 @@
     </div>
 
     <!-- ##### Header Area Start ##### -->
+
     <header class="header-area">
         <!-- Navbar Area -->
         <div class="palatin-main-menu">
@@ -63,65 +65,15 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="rooms.html">Rooms</a></li>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Mega Menu</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="active"><a href="services.html">Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#list-item-1">Masterplan</a></li>
+                                    <li><a href="#list-item-2">Amenidades</a></li>
+                                    <li><a href="#list-item-3">Fotos</a></li>
+                                    <li><a href="#list-item-4">Contacto</a></li>
                                 </ul>
 
                                 <!-- Button -->
                                 <div class="menu-btn">
-                                    <a href="#" class="btn palatin-btn">Make a Reservation</a>
+                                    <a href="pdf/brochure.pdf" download="Reporte2Mayo2010" class="btn palatin-btn">Brochure</a>
                                 </div>
 
                             </div>
@@ -135,144 +87,105 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <div id=”photosphere”> </div>
-<script>   
-  // 360 viewer
-  var PSV = new PhotoSphereViewer({
-    panorama: 'https://carlotaconbotas.github.io/patagonia/img/panoramio-119155969.jpg',
-    container: 'photosphere',
-    loading_img: 'Aquí va la URL del icono',
-    navbar: 'autorotate zoom download fullscreen',
-    caption: 'texto'',
-    default_fov: 65,
-    mousewheel: false,
-    size: {
-      height: 400
-    }
-  });
-</script>
-        
+  
+    
+<section class="align-items-center justify-content-center" >            
+
+
+     <div id="container"></div>
+
+        <script>
+            var div = document.getElementById('container');
+            var PSV = new PhotoSphereViewer({
+                    panorama: 'https://carlotaconbotas.github.io/patagonia/img/panoramio-119155969.jpg',
+                    container: div,
+                    loading_img: 'https://raw.githubusercontent.com/mistic100/Photo-Sphere-Viewer/3.1.0/example/photosphere-logo.gif',
+                    time_anim: 3000,
+                    caption: 'texto',
+                    default_fov: 65,
+                    mousewheel: false,
+                    navbar: 'autorotate zoom download fullscreen',
+                    navbar_style: {
+                    backgroundColor: 'rgba(58, 67, 77, 0.7)'
+                    },
+                });
+        </script>
+  
+</section>    
+    
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Book Now Area Start ##### -->
-    <div class="book-now-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
-                    <div class="book-now-form">
-                        <form action="#">
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select1">Check In</label>
-                                <select class="form-control" id="select1">
-                                  <option>19 June</option>
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select2">Check Out</label>
-                                <select class="form-control" id="select2">
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                  <option>26 June</option>
-                                  <option>27 June</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select3">Adults</label>
-                                <select class="form-control" id="select3">
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select4">Childrens</label>
-                                <select class="form-control" id="select4">
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                </select>
-                            </div>
-
-                            <!-- Button -->
-                            <button type="submit">Book Now</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- ##### Book Now Area End ##### -->
 
     <!-- ##### Service Intro Area Start ##### -->
-    <section class="services-intro">
+    <section class="services-intro" id="list-item-1">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Service Intro Text -->
                 <div class="col-12 col-lg-6">
                     <div class="service-intro-text mb-100">
                         <div class="section-heading">
+                            <br><br><br><br><br><br><br>
                             <div class="line-"></div>
-                            <h2>Amazing Services</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
-                        <a href="#" class="btn palatin-btn mt-50">Read More</a>
+                            <h2>Masterplan</h2>
+                            <p>Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum.</p><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                        </div>  
                     </div>
+                    <!-- ##### Tabs ##### -->
+                    <div class="palatin-tabs-content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Superficie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Planos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Precios</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content mb-100" id="myTabContent">
+                            <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                                <div class="palatin-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="palatin-tab-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                                <div class="palatin-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="palatin-tab-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show active" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+                                <div class="palatin-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="palatin-tab-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
+
+
                 <!-- Services Features -->
-                <div class="col-12 col-lg-6">
-                    <div class="row mb-100">
+                <div class="col-12 col-lg-6"> 
 
-                        <!-- Single Cool Facts -->
-                        <div class="col-12 col-sm-4">
-                            <div class="single-cool-fact">
-                                <div class="scf-text">
-                                    <i class="icon-cocktail-1"></i>
-                                    <p>Pool Beachbar</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row mb-500">
 
-                        <!-- Single Cool Facts -->
-                        <div class="col-12 col-sm-4">
-                            <div class="single-cool-fact">
-                                <div class="scf-text">
-                                    <i class="icon-swimming-pool"></i>
-                                    <p>Infinity Pool</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Cool Facts -->
-                        <div class="col-12 col-sm-4">
-                            <div class="single-cool-fact">
-                                <div class="scf-text">
-                                    <i class="icon-beach"></i>
-                                    <p>Sunbeds</p>
-                                </div>
-                            </div>
-                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12065.250218652096!2d-72.57811871367309!3d-40.886958269010094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96170cd811c418c7%3A0x1b6a7478346eb7d9!2sLaguna%20Bonita!5e0!3m2!1ses-419!2smx!4v1648078246321!5m2!1ses-419!2smx" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                     </div>
                 </div>
@@ -280,48 +193,95 @@
         </div>
     </section>
     <!-- ##### Service Intro Area End ##### -->
+    <!-- ##### Milestones Area Start ##### -->
+    <section class="our-milestones section-padding-100-0 bg-img bg-overlay bg-fixed" style="background-image: url(img/bg-img/laguna-bonita-carla-fernandez-2.jpg);" id="list-item-2">
+        <div class="container"><br><br><br><br><br><br>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="section-heading text-center white">
+                        <div class="line-"></div>
+                        <h2>Amenidades</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="scf-text">
+                            <i class="icon-map"></i>
+                            <h2><span class="counter">30</span></h2>
+                            <p>Lotes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="scf-text">
+                            <i class="icon-sign"></i>
+                            <h2><span class="counter">3</span></h2>
+                            <p>Caminos de servidumbre</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="900ms">
+                        <div class="scf-text">
+                            <i class="icon-around"></i>
+                            <h2><span class="counter">73</span></h2>
+                            <p>Minutos del aeropuerto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="scf-text">
+                            <i class="icon-limousine"></i>
+                            <h2><span class="counter">76</span></h2>
+                            <p>Kilómetros asfaltados</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- ##### Core Features Start ##### -->
-    <section class="core-features-area">
+    
+    <section class="core-features-area" id="list-item-3">
+        <br><br><br><br><br><br>
         <div class="container">
             <div class="row justify-content-center">
 
                 <!-- Single Core Feature Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-core-feature mb-100">
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/12.jpg);"></div>
-                        <!-- Content -->
-                        <div class="feature-content">
-                            <i class="icon-sunset"></i>
-                            <h3>Wellness</h3>
-                            <p>Malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus. faucibus finibus.</p>
-                        </div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/laguna-bonita-carla-fernandez-28.jpg);"></div>
+                        
                     </div>
                 </div>
 
                 <!-- Single Core Feature Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-core-feature mb-100">
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/13.jpg);"></div>
-                        <!-- Content -->
-                        <div class="feature-content">
-                            <i class="icon-sunset"></i>
-                            <h3>Spa Center</h3>
-                            <p>Malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus. faucibus finibus.</p>
-                        </div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/rio-bueno-carla-fernandez-1.jpg);"></div>
+                        
                     </div>
                 </div>
 
                 <!-- Single Core Feature Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-core-feature mb-100">
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/14.jpg);"></div>
-                        <!-- Content -->
-                        <div class="feature-content">
-                            <i class="icon-island"></i>
-                            <h3>Lounge Bar</h3>
-                            <p>Malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus. faucibus finibus.</p>
-                        </div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/27-cascadas-lago-llanquihue-carla-fernandez.jpg);"></div>
+                        
                     </div>
                 </div>
 
@@ -355,33 +315,6 @@
 
                 <!-- Single Service Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <i class="icon-restaurant"></i>
-                        <h4>Restaurants</h4>
-                        <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="400ms">
-                        <i class="icon-beach"></i>
-                        <h4>Massages</h4>
-                        <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <i class="icon-boarding-pass"></i>
-                        <h4>Event Tikets</h4>
-                        <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
-                    </div>
-                </div>
-
-                <!-- Single Service Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="600ms">
                         <i class="icon-sign"></i>
                         <h4>Hiking</h4>
@@ -393,6 +326,34 @@
         </div>
     </section>
     <!-- ##### Services Area End ##### -->
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area d-flex flex-wrap align-items-center" id="list-item-4">
+        <div class="home-map-area">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.589637423384!2d-73.13872198452071!3d-40.5727385046345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961637d0d29c8825%3A0x5e8268b7ac007d0!2sSurpatagonia%20Arquitectura%20y%20Construcci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1648056562967!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- Contact Info -->
+        <div class="contact-info" >
+            <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
+                <div class="line-"></div>
+                <h2>Contacto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+            <h4 class="wow fadeInUp" data-wow-delay="300ms">O'Higgins 580, Oficina 52, Osorno, Los Lagos, Chile</h4>
+            <h5 class="wow fadeInUp" data-wow-delay="400ms">+56 9090 3245</h5>
+            <h5 class="wow fadeInUp" data-wow-delay="500ms">contacto@parcelaspatagonia.com</h5>
+            <!-- Social Info -->
+            <div class="social-info mt-50 wow fadeInUp" data-wow-delay="600ms">
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -410,7 +371,7 @@
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Find us on the map</h6>
+                        <h6 class="widget-title mb-5">Encuéntranos</h6>
                         <img src="img/bg-img/footer-map.png" alt="">
                     </div>
                 </div>
@@ -418,10 +379,10 @@
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
+                        <h6 class="widget-title mb-5">Brochure</h6>
                         <form action="#" method="post" class="subscribe-form">
-                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail">
-                            <button type="submit">Subscribe</button>
+                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="tú E-mail">
+                            <button type="submit">Suscríbete</button>
                         </form>
                     </div>
                 </div>
@@ -429,9 +390,9 @@
                 <!-- Copywrite Text -->
                 <div class="col-12">
                     <div class="copywrite-text mt-30">
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p><a href="#">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos| Parcelas Patagonia <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Parcelas Patagonia</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -450,6 +411,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

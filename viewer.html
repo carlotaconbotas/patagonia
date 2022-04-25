@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Parcelas Patagonia - Río Laguna Cascada</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS photosphere -->
+    <script src="js/jquery/three.min.js"></script>
+    <script src="js/jquery/photo-sphere-viewer.min.js"></script>
+        <style>
+            #container {
+                height:200px; width:100%; margin: 0 auto 
+            }
+        </style>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <style>
+            #modelViewer {
+                height:500px; width:500px; margin: 0 auto 
+            }
+        </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="cssload-container">
+            <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="palatin-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="palatinNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#list-item-1">Masterplan</a></li>
+                                    <li><a href="#list-item-2">Amenidades</a></li>
+                                    <li><a href="#list-item-3">Fotos</a></li>
+                                    <li><a href="#list-item-4">Contacto</a></li>
+                                </ul>
+
+                                <!-- Button -->
+                                <div class="menu-btn">
+                                    <a href="pdf/brochure.pdf" download="Brochure_Parcelas_Patagaonia" class="btn palatin-btn">Brochure</a>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+
+    <section class="align-items-center justify-content-center" >     
+        <div id="container"></div>
+  
+                        <model-viewer id="modelViewer"
+                          src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                          ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+                          alt="A 3D model of an astronaut"
+                          poster="model/poster.png"
+                          camera-controls
+                          camera-orbit="65deg 55deg 2.5m"
+                          ar
+                          auto-rotate
+                          camera-controls>    
+                        </model-viewer>
+        
+
+  
+    </section>    
+     
+
+        
+            
+        
+  
+
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Book Now Area Start ##### -->
+    
+    <!-- ##### Book Now Area End ##### -->
+
+    <!-- ##### Service Intro Area Start ##### -->
+    <section class="services-intro" id="list-item-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Service Intro Text -->
+                <div class="col-12 col-lg-6">
+                    <div class="service-intro-text mb-100">
+                        <div class="section-heading">
+                            <br><br><br><br><br><br><br>
+                            <div class="line-"></div>
+                            <h2>Masterplan</h2>
+                            <p>Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum.</p><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                        </div>  
+                    </div>
+                    <!-- ##### Tabs ##### -->
+                    <div class="palatin-tabs-content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Superficie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Planos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Precios</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content mb-100" id="myTabContent">
+                            <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                                <div class="palatin-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="palatin-tab-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                                <div class="palatin-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="palatin-tab-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show active" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+                                <div class="palatin-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="palatin-tab-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Services Features -->
+                <div class="col-12 col-lg-6"> 
+
+                    <div class="row mb-500">
+
+                        <model-viewer id="modelViewer"
+                          src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                          ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+                          alt="A 3D model of an astronaut"
+                          poster="model/poster.png"
+                          camera-controls
+                          camera-orbit="65deg 55deg 2.5m"
+                          ar
+                          auto-rotate
+                          camera-controls>    
+                        </model-viewer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Service Intro Area End ##### -->
+    <!-- ##### Milestones Area Start ##### -->
+    <section class="our-milestones section-padding-100-0 bg-img bg-overlay bg-fixed" style="background-image: url(img/bg-img/laguna-bonita-carla-fernandez-2.jpg);" id="list-item-2">
+        <div class="container"><br><br><br><br><br><br>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="section-heading text-center white">
+                        <div class="line-"></div>
+                        <h2>Amenidades</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="scf-text">
+                            <i class="icon-map"></i>
+                            <h2><span class="counter">30</span></h2>
+                            <p>Lotes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="scf-text">
+                            <i class="icon-sign"></i>
+                            <h2><span class="counter">3</span></h2>
+                            <p>Caminos de servidumbre</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="900ms">
+                        <div class="scf-text">
+                            <i class="icon-around"></i>
+                            <h2><span class="counter">73</span></h2>
+                            <p>Minutos del aeropuerto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Cool Facts -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="scf-text">
+                            <i class="icon-limousine"></i>
+                            <h2><span class="counter">76</span></h2>
+                            <p>Kilómetros asfaltados</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Core Features Start ##### -->
+    
+    <section class="core-features-area" id="list-item-3">
+        <br><br><br><br><br><br>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- Single Core Feature Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-core-feature mb-100">
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/laguna-bonita-carla-fernandez-28.jpg);"></div>
+                        
+                    </div>
+                </div>
+
+                <!-- Single Core Feature Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-core-feature mb-100">
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/rio-bueno-carla-fernandez-1.jpg);"></div>
+                        
+                    </div>
+                </div>
+
+                <!-- Single Core Feature Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-core-feature mb-100">
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/27-cascadas-lago-llanquihue-carla-fernandez.jpg);"></div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Core Features End ##### -->
+
+    <!-- ##### Services Area Start ##### -->
+    <section class="services-area">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <i class="icon-trekking"></i>
+                        <h4>Bike Rentals</h4>
+                        <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="200ms">
+                        <i class="icon-boat"></i>
+                        <h4>Boat Trips</h4>
+                        <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="600ms">
+                        <i class="icon-sign"></i>
+                        <h4>Hiking</h4>
+                        <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Services Area End ##### -->
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area d-flex flex-wrap align-items-center" id="list-item-4">
+        <div class="home-map-area">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.589637423384!2d-73.13872198452071!3d-40.5727385046345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961637d0d29c8825%3A0x5e8268b7ac007d0!2sSurpatagonia%20Arquitectura%20y%20Construcci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1648056562967!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- Contact Info -->
+        <div class="contact-info" >
+            <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
+                <div class="line-"></div>
+                <h2>Contacto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+            <h4 class="wow fadeInUp" data-wow-delay="300ms">O'Higgins 580, Oficina 52, Osorno, Los Lagos, Chile</h4>
+            <h5 class="wow fadeInUp" data-wow-delay="400ms">+56 9090 3245</h5>
+            <h5 class="wow fadeInUp" data-wow-delay="500ms">contacto@parcelaspatagonia.com</h5>
+            <!-- Social Info -->
+            <div class="social-info mt-50 wow fadeInUp" data-wow-delay="600ms">
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-lg-5">
+                    <div class="footer-widget-area mt-50">
+                        <a href="#" class="d-block mb-5"><img src="img/core-img/logo.png" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. </p>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-widget-area mt-50">
+                        <h6 class="widget-title mb-5">Encuéntranos</h6>
+                        <img src="img/bg-img/footer-map.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-widget-area mt-50">
+                        <h6 class="widget-title mb-5">Brochure</h6>
+                        <form action="#" method="post" class="subscribe-form">
+                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="tú E-mail">
+                            <button type="submit">Suscríbete</button>
+                        </form>
+                    </div>
+                </div>
+<a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+                <!-- Copywrite Text -->
+                <div class="col-12">
+                    <div class="copywrite-text mt-30">
+                        <p><a href="#">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos| Parcelas Patagonia <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Parcelas Patagonia</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

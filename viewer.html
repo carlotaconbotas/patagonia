@@ -30,7 +30,7 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
         <style>
             #modelViewer {
-                height:500px; width:500px; margin: 0 auto 
+                height:500px; width:100%; margin: 0 auto 
             }
         </style>
 </head>
@@ -108,11 +108,12 @@
     alt="A 3D model of a tiny House"
     ar 
     ar-modes="scene-viewer webxr quick-look" 
-    camera-controls 
     environment-image="neutral" 
     poster="poster.png"
     camera-controls
-    camera-orbit="65deg 55deg 2.5m"
+    camera-orbit="-185.5deg 84.07deg auto"
+    exposure="0.68"
+    shadow-softness="0.88"
     auto-rotate
     shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
